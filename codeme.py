@@ -7,6 +7,7 @@ soup = BeautifulSoup(html_text, 'lxml')
 div= soup.find_all('h2')[:4]
 for index, title in enumerate(div):
     title = title.text
+    print(title)
 
 quotes0 = soup.find_all('ul')
 for index, quote in enumerate(quotes0[4:8]):
